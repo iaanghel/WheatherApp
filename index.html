@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>WheatherApp</title>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8xEs6Io28kTqJiwNKPh6tFbQNyqbTnzs"
+  type="text/javascript"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body >
+    <input type="text" id="mapsearch"  placeholder="Location Search"  />
+    <button type="button" id="search"  onclick="GetLocation();">Click Me!</button>
+    <button type="button" id="change"  onclick="changeDegrees(dailySection.textContent);">Change degrees!</button>
+    <div class="location">
+        <h1    class="location-timezone">   Timezone    </h1>
+        <canvas class="icon" width="128" height="128"></canvas>
+    </div>
+    <div class="temperature">
+       <div class="degree-section" >
+        <h2 class="degree">Temperture here</h2>
+        <span ></span>
+    </div>
+        <div class="temperature-description">temperature description </div>
+    </div>
+  </div>
+    <div class="hourly-description">hourly summary </div>
+  </div>
+  </div>
+    <div class="daily-description">daily summary </div>
+  </div>
+  <div id="container">
+    <div id="map" ></div>
+  </div>
+  <script src="app.js"></script>
+  <script src="skycons.js"></script>
+</body>
+</html>

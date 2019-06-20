@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0
+    
+
+
+}
+#container {
+    top: 100%;
+    display:flex;
+    flex-direction:column-reverse;
+    min-height:400px;
+    overflow: auto;
+    
+    
+}
+#search {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 200px;
+    height: 25px;
+    z-index: 1;
+}
+#mapsearch {
+    position: absolute; 
+    top: 40px; 
+    left: 50px; 
+    width: 200px; 
+    height: 25px; 
+    z-index: 1;
+}
+#change {
+    position: absolute; 
+    top: 100px; 
+    left: 50px; 
+    width: 200px; 
+    height: 25px; 
+    z-index: 1;
+}
+#map {
+    flex:5;
+    position:relative;
+    width: 700px;
+    border:1px solid red;
+}
+body {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    background: rgb(43,62,143);
+    font-family: sans-serif;
+    color : white;
+
+}
+.location, .temperature {
+ 
+    height: 30vh;
+    width: 50%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.temperature{
+    top: 300px;
+    flex-direction: column;
+    
+}
+.degree-section{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+
+}
+.degree-section h2{
+    font-size: 40px;
+}
